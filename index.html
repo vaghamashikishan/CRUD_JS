@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="form" id="form">
+            <form id="form1">
+                <br>
+                <label for="name">Name:</label><label class="hide validation name">Please enter name</label><br />
+                <input type="text" name="name" id="name" placeholder="Enter name">
+                <br><br>
+
+                <label for="age">Age:</label><label class="hide validation age">Please enter age</label><br />
+                <input type="number" name="Age" id="age" placeholder="Enter age">
+                <br><br>
+
+                <label for="city">City:</label><label class="hide validation city">Please select city</label><br />
+                <select name="city" id="city" form="form1">
+                    <option value="-1">Select city</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Ahemdabad">Ahemdabad</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br><br>
+
+                <div id="selectGender">
+                    <input type="radio" name="gender" id="Male" value="Male" checked>&nbsp; Male &nbsp;
+                    <input type="radio" name="gender" id="Female" value="Female">&nbsp; Female &nbsp;
+                    <input type="radio" name="gender" id="Other" value="Other">&nbsp; Other
+                </div>
+
+                <label for="email">Email:</label><label class="hide validation email">Please enter correct
+                    email</label><br />
+                <input type="text" name="email" id="email" placeholder="Enter email">
+                <br><br>
+
+                <label for="password">Password:</label><label class="hide validation password">Please enter
+                    password</label><br />
+                <input type="password" name="password" id="password" placeholder="Enter password">
+                <br><br>
+
+                <button type="submit" id="submit">submit</button>
+                <button type="reset" id="reset">reset</button>
+            </form>
+        </div>
+
+        <div id="list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
